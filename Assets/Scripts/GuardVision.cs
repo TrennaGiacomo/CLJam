@@ -7,6 +7,9 @@ public class GuardVision : MonoBehaviour
     [SerializeField] [Range(0, 360)] private float viewAngle = 90f;
     [SerializeField] private LayerMask targetMask; //Player layer
     [SerializeField] private LayerMask obstacleMask; //Walls/props
+    [SerializeField] private bool useCustomDirection = false;
+    [SerializeField] private Vector2 customDirection = Vector2.right;
+
 
     [Header("References")]
     [SerializeField] private Transform visionOrigin;
@@ -29,8 +32,17 @@ public class GuardVision : MonoBehaviour
         foreach (Collider2D target in targets)
         {
             Vector2 dirToTarget = (target.transform.position - visionOrigin.position).normalized;
-            Vector2 forward = guardPatrol.CurrentMoveDirection;
-            if (forward.sqrMagnitude < 0.1f) forward = Vector2.right; // fallback default
+            Vector2 forward;
+            if (useCustomDirection)
+            {
+                forward = customDirection.normalized;
+            }
+            else
+            {
+                forward = guardPatrol != null ? guardPatrol.CurrentMoveDirection : Vector2.right;
+                if (forward.sqrMagnitude < 0.01f)
+                    forward = Vector2.right; // fallback
+            }
             float angleToTarget = Vector2.Angle(forward, dirToTarget);
 
 
@@ -62,10 +74,22 @@ public class GuardVision : MonoBehaviour
 
         Gizmos.color = Color.yellow;
 
-        Vector2 forward = Application.isPlaying && guardPatrol != null
-            ? guardPatrol.CurrentMoveDirection
-            : Vector2.right;
+        Vector2 forward;
 
+        if (useCustomDirection)
+        {
+            forward = customDirection.normalized;
+        }
+        else if (Application.isPlaying && guardPatrol != null)
+        {
+            forward = guardPatrol.CurrentMoveDirection;
+            if (forward.sqrMagnitude < 0.01f)
+                forward = Vector2.right;
+        }
+        else
+        {
+            forward = Vector2.right; // fallback in edit mode
+        }
         float angleOffset = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
 
         int segments = 30;
