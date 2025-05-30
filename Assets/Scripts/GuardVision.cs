@@ -17,6 +17,7 @@ public class GuardVision : MonoBehaviour
     private GuardPatrol guardPatrol;
 
     public bool CanSeePlayer { get; private set; }
+    public bool detectionEnabled = true;
 
     void Awake()
     {
@@ -25,6 +26,8 @@ public class GuardVision : MonoBehaviour
 
     private void Update()
     {
+        if (!detectionEnabled) return;
+
         CanSeePlayer = false;
 
         Collider2D[] targets = Physics2D.OverlapCircleAll(visionOrigin.position, viewRadius, targetMask);
@@ -71,6 +74,7 @@ public class GuardVision : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         if (!visionOrigin) return;
+        if(!detectionEnabled) return;
 
         Gizmos.color = Color.yellow;
 

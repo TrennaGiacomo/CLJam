@@ -5,12 +5,14 @@ public class CharacterMovement2D : MonoBehaviour
     [Header("Movement Settings")]
     [SerializeField] private float moveSpeed = 3f;
 
+    private PlayerInteraction playerInteraction;
     private Vector2 moveInput;
     private InputSystemActions inputActions;
 
     private void Awake()
     {
         inputActions = new InputSystemActions();
+        playerInteraction = GetComponent<PlayerInteraction>();
     }
 
     private void OnEnable()
@@ -31,6 +33,9 @@ public class CharacterMovement2D : MonoBehaviour
             moveInput.y = 0;
         else
             moveInput.x = 0;
+
+        if (moveInput != Vector2.zero)
+            playerInteraction.SetFacingDirection(moveInput);
 
         transform.position += (Vector3)(moveSpeed * Time.deltaTime * moveInput);
     }
