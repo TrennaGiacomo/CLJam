@@ -33,7 +33,6 @@ public class SplashScreenManager : MonoBehaviour
         }
 
         StartCoroutine(TypeText());
-        Logo.GetComponent<Animator>().SetTrigger("Anim");
     }
 
     IEnumerator FadeScreenOut()
@@ -61,7 +60,8 @@ public class SplashScreenManager : MonoBehaviour
             yield return new WaitForSeconds(TypingSpeed);
         }
 
-        yield return new WaitForSeconds(2);
+        Logo.GetComponent<Animator>().SetTrigger("Anim");
+        yield return new WaitForSeconds(3);
         StartCoroutine(FadeScreenOut());
     }
 }
