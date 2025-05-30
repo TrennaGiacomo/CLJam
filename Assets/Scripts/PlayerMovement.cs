@@ -27,8 +27,10 @@ public class CharacterMovement2D : MonoBehaviour
     {
         moveInput = inputActions.Player.Move.ReadValue<Vector2>();
 
-        if (moveInput.sqrMagnitude > 1)
-            moveInput = moveInput.normalized;
+        if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
+            moveInput.y = 0;
+        else
+            moveInput.x = 0;
 
         transform.position += (Vector3)(moveSpeed * Time.deltaTime * moveInput);
     }

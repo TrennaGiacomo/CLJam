@@ -9,10 +9,13 @@ public class GuardPatrol : MonoBehaviour
     [SerializeField] private bool loop = true;
     [SerializeField] private bool pingpong = false;
 
+    public Vector2 CurrentMoveDirection => lastDirection;
+
     private int currentPointIndex = 0;
     private float waitTimer = 0f;
     private bool isWaiting = false;
-    private int direction = 1; //1 = forward, -1 = backward (so we can pingpong)
+    private int direction = 1; // 1 = forward, -1 = backward (for pingpong)
+    private Vector2 lastDirection = Vector2.right;
 
     private void Update()
     {
@@ -26,19 +29,30 @@ public class GuardPatrol : MonoBehaviour
                 isWaiting = false;
                 AdvanceToNextPoint();
             }
-
             return;
         }
 
-        var targetPoint = patrolPoints[currentPointIndex];
-        var directionToTarget = (targetPoint.position - transform.position).normalized;
-        transform.position += moveSpeed * Time.deltaTime * directionToTarget;
+        Transform targetPoint = patrolPoints[currentPointIndex];
+        Vector3 directionToTarget = targetPoint.position - transform.position;
+        Vector3 move = directionToTarget.normalized * moveSpeed * Time.deltaTime;
 
-        //face movement direction
-        if (Mathf.Abs(directionToTarget.x) > Mathf.Abs(directionToTarget.y))
-            transform.localScale = new Vector3(Mathf.Sign(directionToTarget.x), 1, 1);
+        // Clamp movement to avoid overshooting
+        if (move.magnitude > directionToTarget.magnitude)
+            move = directionToTarget;
 
-        //reached point?
+        transform.position += move;
+
+        // Update last move direction if moving
+        if (move.sqrMagnitude > 0.0001f)
+            lastDirection = directionToTarget.normalized;
+
+        // Flip sprite only if moving mostly horizontally
+        if (Mathf.Abs(lastDirection.x) > Mathf.Abs(lastDirection.y))
+        {
+            transform.localScale = new Vector3(Mathf.Sign(lastDirection.x), 1, 1);
+        }
+
+        // Arrived at target point
         if (Vector3.Distance(transform.position, targetPoint.position) < 0.05f)
         {
             transform.position = targetPoint.position;
@@ -62,10 +76,7 @@ public class GuardPatrol : MonoBehaviour
 
             if (currentPointIndex >= patrolPoints.Length)
             {
-                if (loop)
-                    currentPointIndex = 0;
-                else
-                    currentPointIndex = patrolPoints.Length - 1;
+                currentPointIndex = loop ? 0 : patrolPoints.Length - 1;
             }
         }
     }
