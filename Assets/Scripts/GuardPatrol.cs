@@ -56,12 +56,6 @@ public class GuardPatrol : MonoBehaviour
             animator.SetFloat("MoveX", lastDirection.x);
             animator.SetFloat("MoveY", lastDirection.y);
             animator.SetBool("IsMoving", true);
-
-            // Flip sprite only if moving mostly horizontally
-            if (Mathf.Abs(lastDirection.x) > Mathf.Abs(lastDirection.y))
-            {
-                transform.localScale = new Vector3(Mathf.Sign(lastDirection.x), 1, 1);
-            }
         }
         else
         {

@@ -6754,7 +6754,7 @@ MonoBehaviour:
   - {fileID: 210836571}
   - {fileID: 1845234211}
   moveSpeed: 5
-  waitTimeAtPoint: 0.5
+  waitTimeAtPoint: 3
   loop: 1
   pingpong: 0
   animator: {fileID: 395341603}
