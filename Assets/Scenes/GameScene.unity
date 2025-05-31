@@ -1852,6 +1852,7 @@ MonoBehaviour:
   waitTimeAtPoint: 0.5
   loop: 1
   pingpong: 0
+  animator: {fileID: 395341603}
 --- !u!114 &1651932591
 MonoBehaviour:
   m_ObjectHideFlags: 0

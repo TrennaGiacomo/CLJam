@@ -9,6 +9,9 @@ public class GuardPatrol : MonoBehaviour
     [SerializeField] private bool loop = true;
     [SerializeField] private bool pingpong = false;
 
+    [Header("References")]
+    [SerializeField] private Animator animator;
+
     public Vector2 CurrentMoveDirection => lastDirection;
 
     private int currentPointIndex = 0;
@@ -29,6 +32,9 @@ public class GuardPatrol : MonoBehaviour
                 isWaiting = false;
                 AdvanceToNextPoint();
             }
+
+            // Stop animation while waiting
+            animator.SetBool("IsMoving", false);
             return;
         }
 
@@ -42,14 +48,24 @@ public class GuardPatrol : MonoBehaviour
 
         transform.position += move;
 
-        // Update last move direction if moving
+        // Update animation parameters only when actually moving
         if (move.sqrMagnitude > 0.0001f)
+        {
             lastDirection = directionToTarget.normalized;
 
-        // Flip sprite only if moving mostly horizontally
-        if (Mathf.Abs(lastDirection.x) > Mathf.Abs(lastDirection.y))
+            animator.SetFloat("MoveX", lastDirection.x);
+            animator.SetFloat("MoveY", lastDirection.y);
+            animator.SetBool("IsMoving", true);
+
+            // Flip sprite only if moving mostly horizontally
+            if (Mathf.Abs(lastDirection.x) > Mathf.Abs(lastDirection.y))
+            {
+                transform.localScale = new Vector3(Mathf.Sign(lastDirection.x), 1, 1);
+            }
+        }
+        else
         {
-            transform.localScale = new Vector3(Mathf.Sign(lastDirection.x), 1, 1);
+            animator.SetBool("IsMoving", false);
         }
 
         // Arrived at target point
