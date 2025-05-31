@@ -1485,7 +1485,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 1000, y: 600}
+  m_SizeDelta: {x: 380, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671839600
 MonoBehaviour:
@@ -1718,10 +1718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Play as an ambitious thief pursuing his dream of making the world's most
-    expensive collage! Sneak around the art gallery, avoid night guards, deactivate
-    laser sensors, and cameras. \nKeep an eye on your checklist and steal the correct
-    paintings.\n\nWASD - Move\nE - Interact"
+  m_text: "\nWASD - Move\nE - Interact \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9b95f58da5a2d842b8b3f2eaad1c0df, type: 2}
   m_sharedMaterial: {fileID: -1126447322176996171, guid: a9b95f58da5a2d842b8b3f2eaad1c0df, type: 2}

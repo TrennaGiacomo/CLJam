@@ -385,9 +385,10 @@ MonoBehaviour:
   sentences:
   - 'You are a thief with a dream... '
   - Making the most expensive collage in the world
-  - Thanks to a mole, you infiltrated an art gallery
-  - He also gave you a list of paintings with no alarms
+  - Thanks to a mole, you broke into an art gallery at night
+  - The mole also gave you a list of paintings with no alarms
   - Make sure to steal the correct ones...
+  - Avoid the guards and use the panels to deactivate traps
   TypingSpeed: 0.07
   DelayBetweenSentences: 1.5
   fader: {fileID: 1974240405}
