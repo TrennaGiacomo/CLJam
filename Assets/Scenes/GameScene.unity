@@ -827,7 +827,6 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 671975454}
   - {fileID: 1549760817}
   - {fileID: 1524134193}
   - {fileID: 1760272723}
@@ -1587,7 +1586,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2581,11 +2580,11 @@ Transform:
   m_GameObject: {fileID: 671975453}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 246079403}
+  m_Father: {fileID: 1458028282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678139048
 GameObject:
@@ -4372,8 +4371,8 @@ MonoBehaviour:
     pressedSprite: {fileID: 6663398018688013929, guid: 134f57a49dfe49a45a97167a7c68bc78, type: 3}
     direction: 3
   pressSound:
-  - {fileID: 8300000, guid: 9a9cf66750f7e3a419bdc156a74b6a6d, type: 3}
-  - {fileID: 8300000, guid: 62533f214eb7b8342b8d82873c23a5c4, type: 3}
+  - {fileID: 8300000, guid: c924e9a071e3b694abbf1b7dfa1a48cd, type: 3}
+  - {fileID: 8300000, guid: 37c70aea7233e5745b4082b7743dfd6e, type: 3}
   errorSound: {fileID: 8300000, guid: e27e8585ba813a446afe395329d9d4a5, type: 3}
   SuccessSound: {fileID: 8300000, guid: 62f8274ab2155f0489e767e5b54c51d4, type: 3}
   audioSource: {fileID: 519420034}
@@ -4674,6 +4673,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1804903770}
+  - {fileID: 671975454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1458028283
@@ -4738,6 +4738,7 @@ MonoBehaviour:
   emptySprite: {fileID: 21300000, guid: c0232435fc2b9ec4b9154d355fd8a0c1, type: 3}
   audioSource: {fileID: 519420034}
   CrumplingPaper: {fileID: 8300000, guid: e033a6fa90994754dbe9c06ef8badae9, type: 3}
+  exclamationMarkPos: {fileID: 671975454}
 --- !u!1 &1487876570
 GameObject:
   m_ObjectHideFlags: 0
@@ -25587,7 +25588,7 @@ Transform:
   m_GameObject: {fileID: 1694996853}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.21, y: 3.17, z: 0}
+  m_LocalPosition: {x: 4.68, y: 3.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

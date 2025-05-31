@@ -6,6 +6,7 @@ public class Painting : MonoBehaviour, IInteractable
     [SerializeField] private Sprite emptySprite;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip CrumplingPaper;
+    public Transform exclamationMarkPos;
 
     public void Interact()
     {
@@ -13,6 +14,11 @@ public class Painting : MonoBehaviour, IInteractable
         audioSource.clip = CrumplingPaper;
         audioSource.Play();
         GetComponentInChildren<SpriteRenderer>().sprite = emptySprite;
-        FindFirstObjectByType<WantedPaintingsUI>().MarkPaintingFound(paintingKeyword);
+        FindFirstObjectByType<WantedPaintingsUI>().MarkPaintingFound(paintingKeyword, this);
+    }
+
+    public void WrongPainting()
+    {
+        GameManager.Instance.EndGame(gameObject);
     }
 }
