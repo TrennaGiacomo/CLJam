@@ -10,6 +10,7 @@ public class CharacterMovement2D : MonoBehaviour
     private Vector2 moveInput;
     private InputSystemActions inputActions;
     private Rigidbody2D rb;
+    private Animator animator;
 
     private bool inputEnabled = true;
 
@@ -18,6 +19,7 @@ public class CharacterMovement2D : MonoBehaviour
         inputActions = new InputSystemActions();
         playerInteraction = GetComponent<PlayerInteraction>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     private void OnEnable()
@@ -34,8 +36,10 @@ public class CharacterMovement2D : MonoBehaviour
     {
         if (!inputEnabled)
         {
-            moveInput.x = 0;
-            moveInput.y = 0;
+            moveInput = Vector2.zero;
+            animator.SetBool("IsMoving", false);
+            animator.SetFloat("MoveX", 0);
+            animator.SetFloat("MoveY", 0);
             return;
         }
 
@@ -47,8 +51,19 @@ public class CharacterMovement2D : MonoBehaviour
             moveInput.x = 0;
 
         if (moveInput != Vector2.zero)
+        {
             playerInteraction.SetFacingDirection(moveInput);
+            animator.SetBool("IsMoving", true);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
+
+        animator.SetFloat("MoveX", moveInput.x);
+        animator.SetFloat("MoveY", moveInput.y);
     }
+
 
     private void FixedUpdate()
     {

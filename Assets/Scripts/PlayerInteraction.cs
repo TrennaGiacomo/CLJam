@@ -94,14 +94,6 @@ public class PlayerInteraction : MonoBehaviour
             currentTargetTransform.localScale = Vector3.one;
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        Vector2 origin = lookDirectionOrigin ? lookDirectionOrigin.position : transform.position;
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawLine(origin, origin + facingDirection.normalized * interactRange);
-        Gizmos.DrawWireSphere(origin, interactRange);
-    }
-
     public void SetFacingDirection(Vector2 dir)
     {
         if (dir.sqrMagnitude > 0.01f)

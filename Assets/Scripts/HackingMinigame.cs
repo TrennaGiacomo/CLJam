@@ -145,5 +145,11 @@ public class HackingMinigame : MonoBehaviour
         bv.button.interactable = true;
     }
 
+    public void ClosePanel()
+    {
+        gameObject.SetActive(false);
+        FindFirstObjectByType<CharacterMovement2D>().EnableInput();
+    }
+
     public enum Direction { Up = 0, Down = 1, Left = 2, Right = 3 }
 }
