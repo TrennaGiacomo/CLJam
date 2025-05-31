@@ -7,10 +7,13 @@ public class CameraPanel : MonoBehaviour, IInteractable
     [SerializeField] private Sprite offSprite;
     [SerializeField] private GameObject hackingPanel;
 
+    public bool CanInteract { get; set; }
 
-
-    private bool CanInteract = true;
-
+    void Start()
+    {
+        CanInteract = true;
+    }
+    
     public void Interact()
     {
         if (!CanInteract) return;

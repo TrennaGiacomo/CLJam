@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class LaserPanel : MonoBehaviour, IInteractable
@@ -7,8 +8,12 @@ public class LaserPanel : MonoBehaviour, IInteractable
     [SerializeField] private Sprite offSprite;
     [SerializeField] private GameObject hackingPanel;
 
-    private bool CanInteract = true;
+    public bool CanInteract {get; set;}
 
+    void Start()
+    {
+        CanInteract = true;
+    }
 
     public void Interact()
     {
