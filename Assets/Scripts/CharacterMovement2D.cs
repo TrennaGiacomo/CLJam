@@ -35,7 +35,6 @@ public class CharacterMovement2D : MonoBehaviour
         if (!inputEnabled) return;
         moveInput = inputActions.Player.Move.ReadValue<Vector2>();
 
-        // Snap movement to 4 directions
         if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
             moveInput.y = 0;
         else
@@ -54,7 +53,10 @@ public class CharacterMovement2D : MonoBehaviour
     public void DisableInput()
     {
         inputEnabled = false;
-        //movement = Vector2.zero;
-        //animator.SetBool("IsMoving", false);
+    }
+
+    public void EnableInput()
+    {
+        inputEnabled = true;
     }
 }
