@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class CharacterMovement2D : MonoBehaviour
 {
     [Header("Movement Settings")]
@@ -8,11 +9,13 @@ public class CharacterMovement2D : MonoBehaviour
     private PlayerInteraction playerInteraction;
     private Vector2 moveInput;
     private InputSystemActions inputActions;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         inputActions = new InputSystemActions();
         playerInteraction = GetComponent<PlayerInteraction>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnEnable()
@@ -29,6 +32,7 @@ public class CharacterMovement2D : MonoBehaviour
     {
         moveInput = inputActions.Player.Move.ReadValue<Vector2>();
 
+        // Snap movement to 4 directions
         if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
             moveInput.y = 0;
         else
@@ -36,7 +40,11 @@ public class CharacterMovement2D : MonoBehaviour
 
         if (moveInput != Vector2.zero)
             playerInteraction.SetFacingDirection(moveInput);
+    }
 
-        transform.position += (Vector3)(moveSpeed * Time.deltaTime * moveInput);
+    private void FixedUpdate()
+    {
+        Vector2 targetPos = rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
+        rb.MovePosition(targetPos);
     }
 }
