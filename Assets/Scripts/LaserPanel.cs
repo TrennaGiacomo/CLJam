@@ -20,6 +20,7 @@ public class LaserPanel : MonoBehaviour, IInteractable
 
     private void Activate()
     {
+        objectToDisable.GetComponentInParent<Laser>().enabled = false;
         objectToDisable.SetActive(false);
         objectToEnable.SetActive(true);
         CanInteract = false;

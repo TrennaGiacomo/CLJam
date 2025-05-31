@@ -4523,7 +4523,7 @@ Transform:
   m_GameObject: {fileID: 1458028281}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.24, y: 5.75, z: 0}
+  m_LocalPosition: {x: 5.15, y: 6.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4574,7 +4574,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &1458028284
 MonoBehaviour:
@@ -4588,7 +4588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0dee895b65f4db489213f9e8d83c832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintingKeyword: sky
+  paintingKeyword: woman
 --- !u!1 &1487876570
 GameObject:
   m_ObjectHideFlags: 0
@@ -25947,7 +25947,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7ddba3d2d74864c4b8930fcb27c9051b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
