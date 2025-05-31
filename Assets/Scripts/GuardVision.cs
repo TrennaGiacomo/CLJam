@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class GuardVision : MonoBehaviour
 {
@@ -13,12 +14,14 @@ public class GuardVision : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform visionOrigin;
     [SerializeField] private Transform conePivot; // NEW
+    public Transform exclamationMarkPos;
 
     private GuardPatrol guardPatrol;
 
     public bool CanSeePlayer { get; private set; }
     public bool detectionEnabled = true;
     public GameObject DetectionCone;
+
 
     void Awake()
     {
@@ -58,7 +61,7 @@ public class GuardVision : MonoBehaviour
         if (CanSeePlayer)
         {
             Debug.Log("Player spotted!");
-            GameManager.Instance.EndGame();
+            GameManager.Instance.EndGame(gameObject);
         }
     }
 

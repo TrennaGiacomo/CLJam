@@ -32,7 +32,13 @@ public class CharacterMovement2D : MonoBehaviour
 
     private void Update()
     {
-        if (!inputEnabled) return;
+        if (!inputEnabled)
+        {
+            moveInput.x = 0;
+            moveInput.y = 0;
+            return;
+        }
+
         moveInput = inputActions.Player.Move.ReadValue<Vector2>();
 
         if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))

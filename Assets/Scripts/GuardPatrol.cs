@@ -10,7 +10,7 @@ public class GuardPatrol : MonoBehaviour
     [SerializeField] private bool pingpong = false;
 
     [Header("References")]
-    [SerializeField] private Animator animator;
+    public Animator animator;
 
     public Vector2 CurrentMoveDirection => lastDirection;
 
@@ -20,8 +20,12 @@ public class GuardPatrol : MonoBehaviour
     private int direction = 1; // 1 = forward, -1 = backward (for pingpong)
     private Vector2 lastDirection = Vector2.down;
 
+    public bool canMove = true;
+
     private void Update()
     {
+        if (!canMove) return;
+        
         if (patrolPoints.Length == 0) return;
 
         if (isWaiting)

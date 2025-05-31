@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class Laser : MonoBehaviour
@@ -7,6 +8,8 @@ public class Laser : MonoBehaviour
     [SerializeField] private Transform rayOrigin;
     [SerializeField] private LayerMask targetLayer; //Player layer
     [SerializeField] private Vector2 facingDir;
+    [SerializeField] private GameObject exclamationMark;
+    public Transform exclamationMarkPos;
 
     private bool isEnabled = true;
 
@@ -18,7 +21,7 @@ public class Laser : MonoBehaviour
 
         if (hit.collider != null && hit.collider.TryGetComponent(out PlayerInteraction playerInteraction))
         {
-            GameManager.Instance.EndGame();
+            GameManager.Instance.EndGame(gameObject);
         }
     }
 
