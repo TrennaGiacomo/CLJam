@@ -15,7 +15,7 @@ public class GuardPatrol : MonoBehaviour
     private float waitTimer = 0f;
     private bool isWaiting = false;
     private int direction = 1; // 1 = forward, -1 = backward (for pingpong)
-    private Vector2 lastDirection = Vector2.right;
+    private Vector2 lastDirection = Vector2.down;
 
     private void Update()
     {
