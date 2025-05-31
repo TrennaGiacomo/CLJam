@@ -5,19 +5,20 @@ public class GuardVision : MonoBehaviour
     [Header("Detection Settings")]
     [SerializeField] private float viewRadius = 3f;
     [SerializeField] [Range(0, 360)] private float viewAngle = 90f;
-    [SerializeField] private LayerMask targetMask; //Player layer
-    [SerializeField] private LayerMask obstacleMask; //Walls/props
+    [SerializeField] private LayerMask targetMask; // Player layer
+    [SerializeField] private LayerMask obstacleMask; // Walls/props
     [SerializeField] private bool useCustomDirection = false;
     [SerializeField] private Vector2 customDirection = Vector2.right;
 
-
     [Header("References")]
     [SerializeField] private Transform visionOrigin;
+    [SerializeField] private Transform conePivot; // NEW
 
     private GuardPatrol guardPatrol;
 
     public bool CanSeePlayer { get; private set; }
     public bool detectionEnabled = true;
+    public GameObject DetectionCone;
 
     void Awake()
     {
@@ -35,24 +36,13 @@ public class GuardVision : MonoBehaviour
         foreach (Collider2D target in targets)
         {
             Vector2 dirToTarget = (target.transform.position - visionOrigin.position).normalized;
-            Vector2 forward;
-            if (useCustomDirection)
-            {
-                forward = customDirection.normalized;
-            }
-            else
-            {
-                forward = guardPatrol != null ? guardPatrol.CurrentMoveDirection : Vector2.right;
-                if (forward.sqrMagnitude < 0.01f)
-                    forward = Vector2.right; // fallback
-            }
-            float angleToTarget = Vector2.Angle(forward, dirToTarget);
+            Vector2 forward = GetFacingDirection();
 
+            float angleToTarget = Vector2.Angle(forward, dirToTarget);
 
             if (angleToTarget < viewAngle / 2f)
             {
                 float distanceToTarget = Vector2.Distance(visionOrigin.position, target.transform.position);
-
 
                 RaycastHit2D hit = Physics2D.Raycast(visionOrigin.position, dirToTarget, distanceToTarget, obstacleMask);
                 if (!hit)
@@ -63,37 +53,51 @@ public class GuardVision : MonoBehaviour
             }
         }
 
+        UpdateDetectionConeRotation();
+
         if (CanSeePlayer)
         {
             Debug.Log("Player spotted!");
-            // TODO: Call alarm, end game, chase player, etc.
+            GameManager.Instance.EndGame();
         }
     }
 
-    //Editor Only
+    private Vector2 GetFacingDirection()
+    {
+        if (useCustomDirection)
+        {
+            return customDirection.normalized;
+        }
+
+        Vector2 dir = guardPatrol != null ? guardPatrol.CurrentMoveDirection : Vector2.right;
+        return dir.sqrMagnitude < 0.01f ? Vector2.right : dir;
+    }
+
+    private void UpdateDetectionConeRotation()
+    {
+        if (conePivot == null) return;
+
+        Vector2 facing = GetFacingDirection();
+        float angle = Mathf.Atan2(facing.y, facing.x) * Mathf.Rad2Deg;
+
+        conePivot.localRotation = Quaternion.Euler(0f, 0f, angle);
+    }
+
+    public void TurnOffDetectionCone()
+    {
+        if (DetectionCone != null)
+            DetectionCone.SetActive(false);
+
+        detectionEnabled = false;
+    }
+
     private void OnDrawGizmosSelected()
     {
-        if (!visionOrigin) return;
-        if(!detectionEnabled) return;
+        if (!visionOrigin || !detectionEnabled) return;
 
         Gizmos.color = Color.yellow;
 
-        Vector2 forward;
-
-        if (useCustomDirection)
-        {
-            forward = customDirection.normalized;
-        }
-        else if (Application.isPlaying && guardPatrol != null)
-        {
-            forward = guardPatrol.CurrentMoveDirection;
-            if (forward.sqrMagnitude < 0.01f)
-                forward = Vector2.right;
-        }
-        else
-        {
-            forward = Vector2.right; // fallback in edit mode
-        }
+        Vector2 forward = Application.isPlaying ? GetFacingDirection() : Vector2.right;
         float angleOffset = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
 
         int segments = 30;
@@ -129,5 +133,4 @@ public class GuardVision : MonoBehaviour
         float rad = angleDegrees * Mathf.Deg2Rad;
         return new Vector3(Mathf.Cos(rad), Mathf.Sin(rad));
     }
-
 }

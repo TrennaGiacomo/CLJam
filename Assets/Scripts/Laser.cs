@@ -18,7 +18,7 @@ public class Laser : MonoBehaviour
 
         if (hit.collider != null && hit.collider.TryGetComponent(out PlayerInteraction playerInteraction))
         {
-            Debug.Log("Player Spotted");
+            GameManager.Instance.EndGame();
         }
     }
 

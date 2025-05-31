@@ -49,7 +49,7 @@ public class GuardPatrol : MonoBehaviour
         transform.position += move;
 
         // Update animation parameters only when actually moving
-        if (move.sqrMagnitude > 0.0001f)
+        if (!isWaiting)
         {
             lastDirection = directionToTarget.normalized;
 
