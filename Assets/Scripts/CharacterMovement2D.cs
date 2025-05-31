@@ -11,6 +11,8 @@ public class CharacterMovement2D : MonoBehaviour
     private InputSystemActions inputActions;
     private Rigidbody2D rb;
 
+    private bool inputEnabled = true;
+
     private void Awake()
     {
         inputActions = new InputSystemActions();
@@ -30,6 +32,7 @@ public class CharacterMovement2D : MonoBehaviour
 
     private void Update()
     {
+        if (!inputEnabled) return;
         moveInput = inputActions.Player.Move.ReadValue<Vector2>();
 
         // Snap movement to 4 directions
@@ -46,5 +49,12 @@ public class CharacterMovement2D : MonoBehaviour
     {
         Vector2 targetPos = rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(targetPos);
+    }
+
+    public void DisableInput()
+    {
+        inputEnabled = false;
+        //movement = Vector2.zero;
+        //animator.SetBool("IsMoving", false);
     }
 }

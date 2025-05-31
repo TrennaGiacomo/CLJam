@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class LaserPanel : MonoBehaviour, IInteractable
 {
-    [SerializeField] private GameObject[] lasersToDisable;
+    [SerializeField] private GameObject objectToDisable;
+    [SerializeField] private GameObject objectToEnable;
 
     public void Interact()
     {
-        foreach (var laser in lasersToDisable)
-        {
-            laser.SetActive(false);
-        }
+        objectToDisable.SetActive(false);
+        objectToEnable.SetActive(true);
     }
 }
