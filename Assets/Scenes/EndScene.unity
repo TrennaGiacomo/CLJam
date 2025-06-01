@@ -599,7 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6546952a26dd37409b3294282a23f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintingKeyword: alien
+  paintingKeyword: sky
   collectedSprite: {fileID: 21300000, guid: 67b5fe086aa9ca64eb748b6d48b4b00d, type: 3}
   emptySprite: {fileID: 21300000, guid: 39fccc88f66c8c4428622694d59593f4, type: 3}
 --- !u!1 &794133385
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6546952a26dd37409b3294282a23f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintingKeyword: fisher
+  paintingKeyword: moon
   collectedSprite: {fileID: 21300000, guid: 8884664a9364a1e44a11b8c21548d132, type: 3}
   emptySprite: {fileID: 21300000, guid: 65a6502dd2e6b2d4a851256da56cfc0a, type: 3}
 --- !u!1 &925974702
@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6db2b7372e63740925c9e038158651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctPaintings: 4
+  correctPaintings: 0
   text: {fileID: 1127681535}
 --- !u!1 &1027475026
 GameObject:
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6546952a26dd37409b3294282a23f6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paintingKeyword: blue
+  paintingKeyword: flowers
   collectedSprite: {fileID: 21300000, guid: ee493ea9fda02474fb77a7b172f6db33, type: 3}
   emptySprite: {fileID: 21300000, guid: 65a6502dd2e6b2d4a851256da56cfc0a, type: 3}
 --- !u!1 &1362175789
