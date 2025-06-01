@@ -671,7 +671,8 @@ MonoBehaviour:
   - The mole also gave you a list of paintings with no alarms
   - Make sure to steal the correct ones...
   - Avoid the guards and use the panels to deactivate traps
-  TypingSpeed: 0.07
+  - And remember you can exit whenever you want
+  TypingSpeed: 0.1
   DelayBetweenSentences: 1.5
   fader: {fileID: 1974240405}
 --- !u!1 &1446024978

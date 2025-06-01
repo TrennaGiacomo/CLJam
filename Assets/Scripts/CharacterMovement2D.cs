@@ -14,6 +14,8 @@ public class CharacterMovement2D : MonoBehaviour
 
     private bool inputEnabled = true;
 
+    public GameObject InGameMenu;
+
     private void Awake()
     {
         inputActions = new InputSystemActions();
@@ -62,6 +64,11 @@ public class CharacterMovement2D : MonoBehaviour
 
         animator.SetFloat("MoveX", moveInput.x);
         animator.SetFloat("MoveY", moveInput.y);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            InGameMenu.SetActive(!InGameMenu.activeSelf);
+        }
     }
 
 
