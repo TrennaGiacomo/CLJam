@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 9e344768c64e3b2489d599198eb9e25c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7028664761254045125
+    second: Game_Title_Screen_0
+  - first:
+      213: 7905871136262358186
+    second: Game_Title_Screen_1
+  - first:
+      213: 6172012673705360523
+    second: Game_Title_Screen_2
+  - first:
+      213: -1126522887711275120
+    second: Game_Title_Screen_3
+  - first:
+      213: 2360997364428809582
+    second: Game_Title_Screen_4
+  - first:
+      213: -6190230684638257845
+    second: Game_Title_Screen_5
+  - first:
+      213: 5174847549755884285
+    second: Game_Title_Screen_6
+  - first:
+      213: 5725802588644475843
+    second: Game_Title_Screen_7
+  - first:
+      213: -8518461866590568376
+    second: Game_Title_Screen_8
+  - first:
+      213: 606576493048696126
+    second: Game_Title_Screen_9
+  - first:
+      213: 2197472402352103128
+    second: Game_Title_Screen_10
+  - first:
+      213: 4994012710274508128
+    second: Game_Title_Screen_11
+  - first:
+      213: -1927908459039768994
+    second: Game_Title_Screen_12
+  - first:
+      213: -4470796437452945117
+    second: Game_Title_Screen_13
+  - first:
+      213: 6457861572608221036
+    second: Game_Title_Screen_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game_Title_Screen_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 70
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a952c93aa257e90800000000000000
+      internalID: -7028664761254045125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 70
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa48eec49eb47bd60800000000000000
+      internalID: 7905871136262358186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 69
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cba6573d467a550800000000000000
+      internalID: 6172012673705360523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 70
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0974f96f669cd50f0800000000000000
+      internalID: -1126522887711275120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_4
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 16
+        width: 17
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65a9660892f3c020800000000000000
+      internalID: 2360997364428809582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 70
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4dd9645df1e71aa0800000000000000
+      internalID: -6190230684638257845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 70
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df20002dd60c0d740800000000000000
+      internalID: 5174847549755884285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 69
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c38a262e13267f40800000000000000
+      internalID: 5725802588644475843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_8
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 70
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8408829a01858c980800000000000000
+      internalID: -8518461866590568376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 70
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d054d4b1efa6800800000000000000
+      internalID: 606576493048696126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 13
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dedbe9d18dfe7e10800000000000000
+      internalID: 2197472402352103128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 16
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065a2bfb91c4e4540800000000000000
+      internalID: 4994012710274508128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_12
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 16
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5eb6739871be35e0800000000000000
+      internalID: -1927908459039768994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_13
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3290982d35a84f1c0800000000000000
+      internalID: -4470796437452945117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Title_Screen_14
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 18
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f55f392eeee9950800000000000000
+      internalID: 6457861572608221036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Game_Title_Screen_0: -7028664761254045125
+      Game_Title_Screen_1: 7905871136262358186
+      Game_Title_Screen_10: 2197472402352103128
+      Game_Title_Screen_11: 4994012710274508128
+      Game_Title_Screen_12: -1927908459039768994
+      Game_Title_Screen_13: -4470796437452945117
+      Game_Title_Screen_14: 6457861572608221036
+      Game_Title_Screen_2: 6172012673705360523
+      Game_Title_Screen_3: -1126522887711275120
+      Game_Title_Screen_4: 2360997364428809582
+      Game_Title_Screen_5: -6190230684638257845
+      Game_Title_Screen_6: 5174847549755884285
+      Game_Title_Screen_7: 5725802588644475843
+      Game_Title_Screen_8: -8518461866590568376
+      Game_Title_Screen_9: 606576493048696126
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
