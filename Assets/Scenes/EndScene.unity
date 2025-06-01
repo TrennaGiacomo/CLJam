@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe6db2b7372e63740925c9e038158651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctPaintings: 0
+  correctPaintings: 4
   text: {fileID: 1127681535}
 --- !u!1 &1027475026
 GameObject:

@@ -12,6 +12,8 @@ public class Painting : MonoBehaviour, IInteractable
 
     void Start()
     {
+        if(audioSource != null)
+            audioSource = Camera.main.GetComponent<AudioSource>();
         CanInteract = true;
     }
 

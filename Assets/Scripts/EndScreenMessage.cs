@@ -1,7 +1,6 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class EndScreenMessage : MonoBehaviour
 {
@@ -20,7 +19,7 @@ public class EndScreenMessage : MonoBehaviour
         {
             text.text = "You should change job...";
         }
-        else if (correctPaintings == 1 && correctPaintings == 2)
+        else if (correctPaintings == 1 || correctPaintings == 2)
         {
             text.text = "Not bad, but could be better";
         }
@@ -28,7 +27,7 @@ public class EndScreenMessage : MonoBehaviour
         {
             text.text = "So close...";
         }
-        else if (correctPaintings == 4)
+        else if (correctPaintings >= 4)
         {
             text.text = "You finally achieved your dream!!";
         }

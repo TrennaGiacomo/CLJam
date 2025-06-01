@@ -12,6 +12,8 @@ public class LaserPanel : MonoBehaviour, IInteractable
 
     void Start()
     {
+        if(hackingPanel == null)
+            hackingPanel = FindFirstObjectByType<HackingMinigame>().gameObject;
         CanInteract = true;
     }
 
