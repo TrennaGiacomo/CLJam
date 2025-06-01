@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c7739f5eb33039142a16cc9b3209ff63
+guid: 3503c0653fe7ac941b19b970c84bb044
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638843427192699633
+  platformSettingsDirtyTick: 638843743176760422
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,7 +123,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Brick_Material-Sheet
+  - name: Brick_Material-Sheet (1)
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -135,7 +135,7 @@ ScriptedImporter:
       y: 4
       width: 80
       height: 16
-    spriteID: 979ac97e41811f841a5391b913d3d9bf
+    spriteID: 509fbc119897ca7499fbeaadf36b1574
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -157,7 +157,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: fa630f315b03dc843959d541d681b0f6
+    spriteID: ceb75f5d6a0784e43966385df6f5b75d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -178,7 +178,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: 8a4996bd028cf964bb6c71ba3572fcf6
+    spriteID: 2fe98e587f4483c4e92ba62a3ee6188a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -199,7 +199,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: 38c9065bb9cd75249a6a5a6fb603e438
+    spriteID: 9f658ffdccbce3649be0e472c51ecccc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,7 +220,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: 400435fc640bb074eb338a97d5b4863e
+    spriteID: 219ab1d9800fdf347af90a60c969c0df
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -241,7 +241,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: 69a2df1811bb16046932cb6d736422d8
+    spriteID: 1a23c8ab1850b294880858a642dd4d69
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,8 +252,8 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: 1287016215
-    name: Brick_Material-Sheet
+    guid: -165282037
+    name: Brick_Material-Sheet (1)
     layerFlags: 0
     layerType: 0
     blendMode: 0
@@ -266,7 +266,7 @@ ScriptedImporter:
         y: 0
         width: 80
         height: 16
-      spriteId: 979ac97e41811f841a5391b913d3d9bf
+      spriteId: 509fbc119897ca7499fbeaadf36b1574
     linkedCells: []
     parentIndex: -1
   platformSettings:
