@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 2099007663160740821}
   - component: {fileID: 8559384750914767995}
   - component: {fileID: 4790757996256792826}
+  - component: {fileID: 476714117909875921}
   m_Layer: 0
   m_Name: Guard
   m_TagString: Untagged
@@ -177,6 +178,19 @@ MonoBehaviour:
   exclamationMarkPos: {fileID: 8598853329653310584}
   detectionEnabled: 1
   DetectionCone: {fileID: 6603121804475364869}
+--- !u!114 &476714117909875921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132777893843778379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb58844de4f8789498244cf061260cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &2328528326060955984
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +298,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5513920452107042885}
   - component: {fileID: 820540399856034367}
-  - component: {fileID: 1598561683449354697}
   - component: {fileID: 4599524668134117839}
   m_Layer: 0
   m_Name: GuardVisual
@@ -363,19 +376,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1598561683449354697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7318544226798707119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOffset: 0
 --- !u!95 &4599524668134117839
 Animator:
   serializedVersion: 7
