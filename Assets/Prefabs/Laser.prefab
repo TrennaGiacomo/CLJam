@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8910142833345657040}
   - component: {fileID: 7850412573972996143}
+  - component: {fileID: 255486370194894247}
   m_Layer: 0
   m_Name: Laser (7)
   m_TagString: Untagged
@@ -87,6 +88,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &255486370194894247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504561326740346770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &1128748034557291952
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,6 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2331597617918620278}
   - component: {fileID: 8358413931977364162}
+  - component: {fileID: 8877081998382071099}
   m_Layer: 0
   m_Name: Laser (1)
   m_TagString: Untagged
@@ -315,6 +330,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8877081998382071099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2574335762852769621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &3515353046923542799
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8602272594207662840}
   - component: {fileID: 483337684436627376}
+  - component: {fileID: 2345833175026846033}
   m_Layer: 0
   m_Name: Laser (4)
   m_TagString: Untagged
@@ -402,6 +431,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2345833175026846033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515353046923542799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &3882694960743527131
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,6 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9138173348966430934}
   - component: {fileID: 901061187857095361}
+  - component: {fileID: 8813192368464518211}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -489,6 +532,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8813192368464518211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882694960743527131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &4181830572892285300
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2824105184798655317}
   - component: {fileID: 3567588979894607024}
+  - component: {fileID: 8983806239176744767}
   m_Layer: 0
   m_Name: Laser (2)
   m_TagString: Untagged
@@ -712,6 +769,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8983806239176744767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688729979381926508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &5939084581262842245
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 237468151175148275}
   - component: {fileID: 8091716166964708486}
+  - component: {fileID: 8838689501534964661}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -799,6 +870,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8838689501534964661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5939084581262842245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &6146608378868304854
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 450175533740476136}
   - component: {fileID: 8918032056316374642}
+  - component: {fileID: 6273041444682339338}
   m_Layer: 0
   m_Name: Laser (3)
   m_TagString: Untagged
@@ -886,6 +971,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6273041444682339338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6146608378868304854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &6282565654768862353
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2144582563145920605}
   - component: {fileID: 6730647552672490169}
+  - component: {fileID: 3380285927924062647}
   m_Layer: 0
   m_Name: Laser (5)
   m_TagString: Untagged
@@ -973,6 +1072,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3380285927924062647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6282565654768862353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &6732488762223603424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1016,6 +1128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1141927944204466818}
   - component: {fileID: 2834285371345040626}
+  - component: {fileID: 424069647110033204}
   m_Layer: 0
   m_Name: Laser (6)
   m_TagString: Untagged
@@ -1093,6 +1206,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &424069647110033204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958282054915019070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a559c67f27231cd4a9654f81a44fac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOffset: 0
 --- !u!1 &7081099585038089864
 GameObject:
   m_ObjectHideFlags: 0
