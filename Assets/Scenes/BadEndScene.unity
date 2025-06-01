@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 33316959}
   - component: {fileID: 33316960}
-  - component: {fileID: 33316961}
   m_Layer: 0
   m_Name: GirlWithEarring
   m_TagString: Untagged
@@ -196,7 +195,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c78e2cb30bdc7c24a9bfd474911d1bc0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0232435fc2b9ec4b9154d355fd8a0c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -207,21 +206,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &33316961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33316958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6546952a26dd37409b3294282a23f6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingKeyword: headband
-  collectedSprite: {fileID: 21300000, guid: c78e2cb30bdc7c24a9bfd474911d1bc0, type: 3}
-  emptySprite: {fileID: 21300000, guid: c0232435fc2b9ec4b9154d355fd8a0c1, type: 3}
 --- !u!1 &254518664
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +493,6 @@ GameObject:
   m_Component:
   - component: {fileID: 666656104}
   - component: {fileID: 666656105}
-  - component: {fileID: 666656106}
   m_Layer: 0
   m_Name: AlienInvasion
   m_TagString: Untagged
@@ -576,7 +559,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 67b5fe086aa9ca64eb748b6d48b4b00d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39fccc88f66c8c4428622694d59593f4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -587,21 +570,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &666656106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666656103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6546952a26dd37409b3294282a23f6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingKeyword: alien
-  collectedSprite: {fileID: 21300000, guid: 67b5fe086aa9ca64eb748b6d48b4b00d, type: 3}
-  emptySprite: {fileID: 21300000, guid: 39fccc88f66c8c4428622694d59593f4, type: 3}
 --- !u!1 &794133385
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +580,6 @@ GameObject:
   m_Component:
   - component: {fileID: 794133386}
   - component: {fileID: 794133387}
-  - component: {fileID: 794133388}
   m_Layer: 0
   m_Name: MoonFisher
   m_TagString: Untagged
@@ -679,7 +646,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8884664a9364a1e44a11b8c21548d132, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65a6502dd2e6b2d4a851256da56cfc0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -690,21 +657,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &794133388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794133385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6546952a26dd37409b3294282a23f6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingKeyword: fisher
-  collectedSprite: {fileID: 21300000, guid: 8884664a9364a1e44a11b8c21548d132, type: 3}
-  emptySprite: {fileID: 21300000, guid: 65a6502dd2e6b2d4a851256da56cfc0a, type: 3}
 --- !u!1 &925974702
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +669,6 @@ GameObject:
   - component: {fileID: 925974705}
   - component: {fileID: 925974704}
   - component: {fileID: 925974703}
-  - component: {fileID: 925974707}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -809,20 +760,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &925974707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925974702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe6db2b7372e63740925c9e038158651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctPaintings: 0
-  text: {fileID: 1127681535}
 --- !u!1 &1027475026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,7 +1087,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: You got caught!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a9b95f58da5a2d842b8b3f2eaad1c0df, type: 2}
   m_sharedMaterial: {fileID: -1126447322176996171, guid: a9b95f58da5a2d842b8b3f2eaad1c0df, type: 2}
@@ -1159,8 +1096,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294177779
+  m_fontColor: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1177,13 +1114,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
-  m_fontSizeBase: 46
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1330,7 +1267,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1253628573}
   - component: {fileID: 1253628574}
-  - component: {fileID: 1253628575}
   m_Layer: 0
   m_Name: BlueFlower
   m_TagString: Untagged
@@ -1397,7 +1333,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee493ea9fda02474fb77a7b172f6db33, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65a6502dd2e6b2d4a851256da56cfc0a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1408,21 +1344,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1253628575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253628572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6546952a26dd37409b3294282a23f6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paintingKeyword: blue
-  collectedSprite: {fileID: 21300000, guid: ee493ea9fda02474fb77a7b172f6db33, type: 3}
-  emptySprite: {fileID: 21300000, guid: 65a6502dd2e6b2d4a851256da56cfc0a, type: 3}
 --- !u!1 &1362175789
 GameObject:
   m_ObjectHideFlags: 0

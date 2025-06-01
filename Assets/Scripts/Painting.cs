@@ -24,6 +24,7 @@ public class Painting : MonoBehaviour, IInteractable
         audioSource.Play();
         GetComponentInChildren<SpriteRenderer>().sprite = emptySprite;
         FindFirstObjectByType<WantedPaintingsUI>().MarkPaintingFound(paintingKeyword, this);
+        PaintingsManager.Instance.MarkCollected(paintingKeyword);
         CanInteract = false;
     }
 

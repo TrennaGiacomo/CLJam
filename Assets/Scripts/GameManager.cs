@@ -77,6 +77,6 @@ public class GameManager : MonoBehaviour
         fader.DOFade(1f, 1f);
         yield return new WaitForSeconds(1f);
 
-        PersistantSceneManager.Instance.LoadScene("EndScene");
+        PersistantSceneManager.Instance.LoadScene("BadEndScene");
     }
 }
