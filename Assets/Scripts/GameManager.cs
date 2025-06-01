@@ -33,13 +33,11 @@ public class GameManager : MonoBehaviour
     {
         if (isGameOver) return;
 
-        
-
         if (spotter.TryGetComponent<Laser>(out var laser))
             exclamationMarkInstance = Instantiate(exclamationMark, laser.exclamationMarkPos);
         else if (spotter.TryGetComponent<GuardVision>(out var guard))
             exclamationMarkInstance = Instantiate(exclamationMark, guard.exclamationMarkPos);
-        else if(spotter.TryGetComponent<Painting>(out var painting))
+        else if (spotter.TryGetComponent<Painting>(out var painting))
             exclamationMarkInstance = Instantiate(exclamationMark, painting.exclamationMarkPos);
         else
             return;

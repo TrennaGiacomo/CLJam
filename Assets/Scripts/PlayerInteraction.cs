@@ -39,7 +39,7 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (interactable != currentTarget)
             {
-                if(interactable.CanInteract)
+                if (interactable.CanInteract)
                     SetNewTarget(interactable, hit.collider.transform);
             }
 
@@ -99,4 +99,17 @@ public class PlayerInteraction : MonoBehaviour
         if (dir.sqrMagnitude > 0.01f)
             facingDirection = dir.normalized;
     }
+    
+    #if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+
+        Vector2 origin = lookDirectionOrigin ? lookDirectionOrigin.position : transform.position;
+        Vector2 direction = facingDirection.normalized;
+
+        Gizmos.DrawLine(origin, origin + direction * interactRange);
+        Gizmos.DrawWireSphere(origin + direction * interactRange, 0.1f); // Optional endpoint marker
+    }
+    #endif
 }
