@@ -12,7 +12,7 @@ public class PaintingDisplay : MonoBehaviour
         if (PaintingsManager.Instance != null && PaintingsManager.Instance.isCollected(paintingKeyword))
         {
             sr.sprite = collectedSprite;
-            var canvasManager = FindFirstObjectByType<EndScreenMessage>().correctPaintings++;
+            FindFirstObjectByType<EndScreenMessage>().correctPaintings++;
         }
         else
             sr.sprite = emptySprite;

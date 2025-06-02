@@ -17,10 +17,7 @@ public class PaintingRandomizer : MonoBehaviour
         {
             var randPaintingData = Random.Range(0, paintingData.Count);
 
-            painting.keyword = paintingData[randPaintingData].keyword;
-            painting.fullSprite = paintingData[randPaintingData].fullSprite;
-            painting.emptySprite = paintingData[randPaintingData].emptySprite;
-            painting.RefreshSprite();
+            painting.RefreshSprite(paintingData[randPaintingData].keyword, paintingData[randPaintingData].fullSprite, paintingData[randPaintingData].emptySprite);
 
             paintingData.Remove(paintingData[randPaintingData]);
         }

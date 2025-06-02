@@ -16,6 +16,8 @@ public class CharacterMovement2D : MonoBehaviour
 
     public GameObject InGameMenu;
 
+    public GameObject miniGame;
+
     private void Awake()
     {
         inputActions = new InputSystemActions();
@@ -36,6 +38,24 @@ public class CharacterMovement2D : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (miniGame.activeSelf)
+            {
+                miniGame.SetActive(false);
+                inputEnabled = true;
+            }
+            else
+            {
+                InGameMenu.SetActive(!InGameMenu.activeSelf);
+
+                if (InGameMenu.activeSelf)
+                    Time.timeScale = 0;
+                else
+                    Time.timeScale = 1;
+            }
+        }
+
         if (!inputEnabled)
         {
             moveInput = Vector2.zero;
@@ -45,7 +65,8 @@ public class CharacterMovement2D : MonoBehaviour
             return;
         }
 
-        moveInput = inputActions.Player.Move.ReadValue<Vector2>();
+        if (Time.timeScale == 1)
+            moveInput = inputActions.Player.Move.ReadValue<Vector2>();
 
         if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
             moveInput.y = 0;
@@ -64,11 +85,6 @@ public class CharacterMovement2D : MonoBehaviour
 
         animator.SetFloat("MoveX", moveInput.x);
         animator.SetFloat("MoveY", moveInput.y);
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            InGameMenu.SetActive(!InGameMenu.activeSelf);
-        }
     }
 
 
@@ -86,5 +102,10 @@ public class CharacterMovement2D : MonoBehaviour
     public void EnableInput()
     {
         inputEnabled = true;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
     }
 }

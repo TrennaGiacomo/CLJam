@@ -4,7 +4,7 @@ using TMPro;
 public class WantedPaintingsUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI[] clueTexts;
-    private bool correctPainting;
+    private bool correctPainting = false;
 
     public void MarkPaintingFound(string keyword, Painting painting)
     {
@@ -16,9 +16,13 @@ public class WantedPaintingsUI : MonoBehaviour
                 correctPainting = true;
             }
         }
-
+        
         if (!correctPainting)
+        {
+            Debug.Log("Wrong Painting");
             painting.WrongPainting();
+        }
 
+        correctPainting = false;
     }
 }

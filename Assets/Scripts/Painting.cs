@@ -18,9 +18,11 @@ public class Painting : MonoBehaviour, IInteractable
         CanInteract = true;        
     }
 
-    public void RefreshSprite()
+    public void RefreshSprite(string keyword, Sprite fullSprite, Sprite emptySprite)
     {
+        this.keyword = keyword;
         GetComponentInChildren<SpriteRenderer>().sprite = fullSprite;
+        this.emptySprite = emptySprite;
     }
 
     public void Interact()

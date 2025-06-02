@@ -34,6 +34,8 @@ public class HackingMinigame : MonoBehaviour
 
     private void InitializeMinigame()
     {
+        StopAllCoroutines();
+        redFilter.SetActive(false);
         correctSequence.Clear();
         inputIndex = 0;
 
