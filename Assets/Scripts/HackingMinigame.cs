@@ -139,7 +139,7 @@ public class HackingMinigame : MonoBehaviour
         bv.button.interactable = false;
         image.sprite = bv.pressedSprite;
 
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
 
         image.sprite = bv.normalSprite;
         bv.button.interactable = true;

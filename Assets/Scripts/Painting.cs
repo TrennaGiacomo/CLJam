@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class Painting : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string paintingKeyword = "sky";
-    [SerializeField] private Sprite emptySprite;
+    public string keyword;
+    public Sprite fullSprite;
+    public Sprite emptySprite;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip CrumplingPaper;
     public Transform exclamationMarkPos;
@@ -12,9 +13,14 @@ public class Painting : MonoBehaviour, IInteractable
 
     void Start()
     {
-        if(audioSource != null)
+        if (audioSource == null)
             audioSource = Camera.main.GetComponent<AudioSource>();
-        CanInteract = true;
+        CanInteract = true;        
+    }
+
+    public void RefreshSprite()
+    {
+        GetComponentInChildren<SpriteRenderer>().sprite = fullSprite;
     }
 
     public void Interact()
@@ -25,8 +31,8 @@ public class Painting : MonoBehaviour, IInteractable
         audioSource.clip = CrumplingPaper;
         audioSource.Play();
         GetComponentInChildren<SpriteRenderer>().sprite = emptySprite;
-        FindFirstObjectByType<WantedPaintingsUI>().MarkPaintingFound(paintingKeyword, this);
-        PaintingsManager.Instance.MarkCollected(paintingKeyword);
+        FindFirstObjectByType<WantedPaintingsUI>().MarkPaintingFound(keyword, this);
+        PaintingsManager.Instance.MarkCollected(keyword);
         CanInteract = false;
     }
 
